@@ -1,0 +1,16 @@
+---
+title: Post 2 (markdown)
+tags:
+  - blog
+  - eleventy
+  - markdown
+---
+
+<h1>{{ title }}</h1>
+
+<p>This post is about using Markdown with Eleventy, and should have one related post (post-7).</p>
+
+{% related title="Eleventy markdown posts",
+    collection=collections["eleventy:markdown"],
+    filterUrl=page.url %}
+

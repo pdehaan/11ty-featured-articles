@@ -1,0 +1,16 @@
+---
+title: Post 3 (Nunjucks)
+tags:
+  - blog
+  - eleventy
+  - nunjucks
+featured: true
+---
+
+<h1>{{ title }}</h1>
+
+<p>This post is about using Nunjucks with Eleventy, and should have one related post (post-5).</p>
+
+{% related title="Eleventy + Nunjucks posts",
+    collection=collections["eleventy:nunjucks"],
+    filterUrl=page.url %}

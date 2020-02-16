@@ -1,0 +1,14 @@
+---
+title: Featured posts
+layout: layouts/default.njk
+---
+
+{% related title="Featured posts (via collection)",
+    collection=collections["eleventy:featured"],
+    cls="featured" %}
+
+{% related title="Featured posts (via filter)",
+    collection=collections["eleventy"] | featured | reverse,
+    cls="featured" %}
+
+<a href="/posts/">All posts</a>

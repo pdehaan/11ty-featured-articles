@@ -1,0 +1,16 @@
+---
+title: Post 6 (filters)
+tags:
+  - blog
+  - eleventy
+  - filters
+featured: true
+---
+
+<h1>{{ title }}</h1>
+
+<p>This post is about using custom filters with Eleventy, and should have no related posts [yet].</p>
+
+{% related title="Eleventy filters posts",
+    collection=collections["eleventy:filters"],
+    filterUrl=page.url %}

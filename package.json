@@ -1,0 +1,27 @@
+{
+  "name": "11ty-featured-articles",
+  "description": "Using shortcodes and collections to discover related and featured posts.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-featured-articles/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-featured-articles#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-featured-articles.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "dev": "npm run build && npm run format:output",
+    "format:output": "npx prettier 'www/**/*.html' --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

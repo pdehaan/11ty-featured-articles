@@ -1,0 +1,11 @@
+---
+title: Posts archive
+---
+
+{% related title="All posts",
+    collection=collections["eleventy"] | reverse %}
+
+{% related title="Last 5 posts",
+    collection=collections["eleventy"] | reverse | batch(5) | first %}
+
+<a href="/">Featured posts</a>
